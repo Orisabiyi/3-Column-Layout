@@ -37,10 +37,10 @@ body {
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
-    background-color: royalblue;
+    background-color: var(--color-transparent-white);
 }
 
-.container {
+.main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ body {
 .card-container {
     flex: 0 0 63%;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 
     display: flex;
@@ -60,7 +60,6 @@ body {
 
 .card {
     flex: 1;
-
     padding: 4rem;
 }
 
@@ -80,6 +79,10 @@ body {
     margin-bottom: 3rem;
 }
 
+.card__content {
+    margin-bottom: 6rem;
+}
+
 .heading-primary {
     font-size: 4rem;
     font-family: var(--font-heading);
@@ -91,7 +94,6 @@ body {
 .paragraph {
     font-size: var(--default-font-size);
     color: var(--color-transparent-white);
-    margin-bottom: 6rem;
 }
 
 .btn:link,
@@ -108,7 +110,8 @@ body {
 
 .btn:hover {
     background-color: transparent;
-    border: 1.5px solid var(--color-transparent-white);
+    border: 2px solid var(--color-transparent-white);
+    padding: calc(1.5rem - 2px) calc(3rem - 2px);
     color: var(--color-transparent-white);
 }
 
@@ -170,6 +173,9 @@ body {
 }
 
 @media only screen and (max-width: 37.5em) {
+    .main {
+        padding: 4rem 0;
+    }
     .card-container {
         flex: 0 0 80%;
     }
