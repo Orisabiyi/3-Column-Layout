@@ -108,7 +108,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
     background-color: transparent;
     border: 2px solid var(--color-transparent-white);
     padding: calc(1.5rem - 2px) calc(3rem - 2px);
